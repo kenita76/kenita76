@@ -1,0 +1,92 @@
+/* static/css/styles.css */
+
+/* Importar la fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Definir la paleta de colores */
+:root {
+    --color-fondo: #e0f7fa;
+    --color-primario: #00acc1;
+    --color-primario-darker: #007c91;
+    --color-secundario: #ffffff;
+    --color-texto: #333333;
+}
+
+/* Aplicar la fuente y colores globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: var(--color-primario);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el encabezado secundario */
+h2 {
+    color: var(--color-texto);
+    text-align: center;
+    padding: 0;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-primario);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: var(--color-primario-darker);
+}
+
+/* Estilos para los resultados */
+div {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-primario);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+}
